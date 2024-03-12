@@ -1,19 +1,23 @@
-# AzureML_Setting_Up_Workspace
- How to setup an AzureML workspace
+# Azure Machine Learning Workspace Creation
 
-Prerequisites - For optimal experience with this guide, you will need:
+This Python script creates a new Azure Machine Learning workspace.
 
-    A fundamental grasp of Machine Learning concepts
-    An active Azure subscription within an Azure account. You can sign up for free
-    A Python development environment
-    Azure Machine Learning Python SDK v2 installed - "pip install azure-ai-ml"
-    
-Goals - Upon completing this guide, you will be equipped to:
+## Requirements
 
-    Establish an Azure Machine Learning workspace using the Python SDK
-    Retrieve workspace information using the Python SDK
-    Initialize a workspace in the Python SDK with specific parameters
-    Document workspace details in a configuration file
-    Access a workspace through the Python SDK by utilizing a pre-existing config file
+- Python 3.6 or later
+- AzureML SDK for Python (`azureml-core` package)
 
-    
+## Installation
+
+Ensure that the `azureml-core` package is installed:
+
+pip install azureml-core
+
+Usage
+In the main.py file, replace <your-subscription-id> and <your-tenant-id> with your actual Azure subscription and tenant IDs.
+
+Then, run the script:
+python main.py
+
+This will create a new Azure Machine Learning workspace named 'azureml_fridge_items' in the 'azureml_fridge_items' resource group (which will be created if it doesn't exist) in the 'australiaeast' region.
+
